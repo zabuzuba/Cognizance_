@@ -1,0 +1,48 @@
+pseudo code
+
+this program prints the first hundred fibinoci terms
+
+START
+CREATE sc
+DECLARE int num1, num2, i, count
+DECLARE a[]
+INITIALIZE a[0] = 0
+INITIALIZE a[1] = 1
+INITIALIZE num1 = 0
+INITIALIZE num2 = 1
+INITIALIZE count = 99
+for LOOP 
+INITIALIZE a[i] = num1 + num2
+SWAPING THE NUMBERS num1 = num2;
+num2 = a[i]
+DISPLAY "enter which term you want to see which is less than 99"
+INPUT c
+DISPLAY a[c]
+
+java program
+
+
+import java.util.Scanner;
+public class thRead
+{
+public static void main(String args[])
+{
+	Scanner sc = new Scanner(System.in);
+int num1, num2, i, count;
+ int[] a = new int[99];
+a[0]=0;
+a[1]=1;
+num1 = 0;
+num2 = 1;
+count = 99;
+System.out.print(num1+" "+num2);
+for(i=2; i<count; i++) {
+	a[i] = num1 + num2;
+	num1 = num2;
+	num2 = a[i];	
+}
+System.out.println("enter which term you want to see which is less than 99");
+int c = sc.nextInt();
+System.out.println(a[c]);
+}
+}
