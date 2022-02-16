@@ -1,0 +1,40 @@
+pseudo code
+
+this program enables user  to determine whether the number is divisible by 3 or not
+
+START
+CREATE scanner object sc
+DECLARE int num
+DECLARE int sum
+INITIALIZE sum = 0
+INPUT num
+while(num/10 !=0) {
+sum = sum + num%10
+num = num/10 }
+if (sum%3==0)
+DISPLAY "true"
+if(sum%3 !=0)
+DISPLAY "false"
+
+
+java program
+
+import java.util.Scanner;
+public class divi
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+int num;
+int sum;
+sum = 0;
+num = sc.nextInt();
+while(num/10 !=0){
+sum = sum + num%10; 
+num = num/10; }
+if(sum%3==0)
+System.out.println("true");
+if(sum%3!=0)
+System.out.println("false");
+}
+}
